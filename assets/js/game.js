@@ -13,7 +13,7 @@ var fight = function(enemy) {
       
     // repeat and execute as long as the enemy-robot is alive 
     while (playerInfo.health > 0 && enemy.health > 0) {
->>>>>>> a877e11a68138a992cd5693558b36ade925791ec
+
 
         // ask player if they'd like to fight or run
         var promptFight = window.prompt("Would you like to FIGHT or SKIP this battle? Enter 'FIGHT' or 'SKIP' to choose.");
@@ -30,7 +30,7 @@ var fight = function(enemy) {
             // subtract money from playerInfo.money for skipping
                 playerInfo.money = Math.max(0, playerInfo.money - 10);
                 console.log("playerInfo.money", playerInfo.money);
->>>>>>> a877e11a68138a992cd5693558b36ade925791ec
+
                 break;
             }
         }
@@ -51,7 +51,7 @@ var fight = function(enemy) {
                 
             // award player money for winning
             playerInfo.money = playerInfo.money + 20;
->>>>>>> a877e11a68138a992cd5693558b36ade925791ec
+
 
             // leave while() loop since enemy is dead
             break;
@@ -74,7 +74,7 @@ var fight = function(enemy) {
             break;
         } else {
             window.alert(playerInfo.name + " still has " + playerInfo.health + " health left.");
->>>>>>> a877e11a68138a992cd5693558b36ade925791ec
+
         }
     }
 };
@@ -108,7 +108,7 @@ var startGame = function() {
                 }
             }
   
->>>>>>> a877e11a68138a992cd5693558b36ade925791ec
+
         }
 
         else {
@@ -131,7 +131,7 @@ var endGame = function() {
 
     if (playerInfo.health > 0) {
         window.alert("Great job, you've survived the game! You now have a score of " + playerInfo.money + ".");
->>>>>>> a877e11a68138a992cd5693558b36ade925791ec
+
     } 
     else {
         window.alert("You've lost your robot in battle.");
@@ -240,11 +240,11 @@ var enemyInfo = [
     }
 ];
 
->>>>>>> a877e11a68138a992cd5693558b36ade925791ec
+
 //fight();
 
 // start the game when the page loads
 startGame();
 
 
->>>>>>> a877e11a68138a992cd5693558b36ade925791ec
+
